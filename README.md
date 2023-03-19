@@ -47,7 +47,7 @@ Each makefile provides a `make help` command that describes the
 available commands.
 
 ## Programming The Icebreaker Board
-To be able to program the icebreaker board to display a sobel image, you must be in the sobel_core folder and run the command `make prog`.  This will also create a .nplog file that will show you how many LUTs your board uses, your max clk frequency, and other info.  In addition, if you want to change the scaling of the image shown, there is a parameter named scale_lp which you can change: the default scaling is x4 but can be change as low as x1.
+To be able to program the icebreaker board to display a sobel image, you must be in the sobel_core folder and run the command `make prog`.  This will also create a .nplog file that will show you how many LUTs your board uses, your max clk frequency, and other info.  In addition, if you want to change the scaling of the image shown, there is a parameter named scale_lp in top.sv which you can change: the default scaling is x4 but can be change as low as x1.
 
 ## Changing Image To Apply Sobel Filter
 To change the image you want to apply the sobel filter to, you must insert the .jpeg image into the Matlab_image_to_hex folder, rename it to color_image.jpeg, and run the Matlab_image_to_hex/image_to_hex.m file on matlab.  Doing this will create a file named gray_image.txt in the sobel_core/input_image.  NOTE: inorder for the image to properly display on the Icebreaker board, the image must be rescaled to have a width: 160 and height: 120: this is the default. Then you can do the steps in the Programming The Icebreaker Board section.
