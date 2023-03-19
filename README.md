@@ -9,7 +9,7 @@ The repository has the following file structure:
 | README.md (This File)
 ├── 
 │   ├── provided_modules
-│   │   └── *.sv # pre-written SystemVerilog files such add the icebreaker.pcf for changing icebreaker │   │            # pmods layout
+│   │   └── *.sv # pre-written SystemVerilog files such add the icebreaker.pcf for changing icebreaker pmods layout
 │   │
 │   ├── Display
 │   │   ├── clock_display.sv # Module that initializes the clock for the display
@@ -18,11 +18,11 @@ The repository has the following file structure:
 │   ├── Matlab_image_to_hex
 │   │   ├── color_image.jpeg # Image example for the sobel filter
 │   │   ├── hex_to_image.m   # Converts hex values into an image
-│   │   └── image_to_hex.m   # Convert a jpeg image to gray scale then to hex values and stores them in a │   │					       # .txt file
+│   │   └── image_to_hex.m   # Convert a jpeg image to gray scale then to hex values and stores them in a .txt file
 │   │
 │   ├── Memory
 │   │   ├── ram_1r1w_sync.sv  # 1 port read 1 port write synchronous memory module
-│   │   └── sync_valid_mem.sv # ram_1r1w_sync.sv but with a valid_o output that tells next read memory is │   │							# valid after a read address
+│   │   └── sync_valid_mem.sv # ram_1r1w_sync.sv but with a valid_o output that tells next read memory is valid after a read address
 │   │
 │   ├── separator_3x3
 │   │   ├── data.hex         # .hex files with a predefined 4x4 matrix for testing separator module
