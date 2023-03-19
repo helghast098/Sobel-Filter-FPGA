@@ -1,6 +1,6 @@
 # Sobel Filter FPGA Project by Fabert C.
 
-## Cloning Repositoy
+## Cloning Repository
 To clone repository: `git clone https://github.com/helghast098/Sobel-Filter-FPGA.git`
 ## Repository Structure
 The repository has the following file structure:
