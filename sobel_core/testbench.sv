@@ -9,7 +9,7 @@ module testbench();
    logic [0:0] up_i;
    wire [0:0]  clk_i;
    wire [0:0]  reset_i;
-	 logic [$clog2(638*478):0] data_count; // How many times to write to the file
+	 logic [$clog2(image_width_lp*image_height_lp):0] data_count; // How many times to write to the file
 
 	 logic [0:0]  error_o; // error output
 	 logic [0:0] reset_done = 1'b0; // if reset done
