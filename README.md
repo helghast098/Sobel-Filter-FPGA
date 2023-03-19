@@ -12,11 +12,8 @@ The repository has the following file structure:
 │   │   └── *.sv # pre-written SystemVerilog files such add the icebreaker.pcf for changing icebreaker │   │            # pmods layout
 │   │
 │   ├── Display
-│   │   ├── Makefile # Used for building Display test
 │   │   ├── clock_display.sv # Module that initializes the clock for the display
 │   │   ├── display_480p.sv  # Module that initializes the display components such as hsync, vsync, etc
-│   │   └── testbench.sv     # Tests whether the display_480p.sv produces the correct hsync, vsync, etc
-│   │ 		└── Makefile     # used to create the iverilog.vcd and verilator.fst files that show gtkwave
 │   │
 │   ├── Matlab_image_to_hex
 │   │   ├── color_image.jpeg # Image example for the sobel filter
