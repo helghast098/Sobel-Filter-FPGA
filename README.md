@@ -50,9 +50,13 @@ To be able to program the icebreaker board to display a sobel image, you must be
 
 ## Changing Image To Apply Sobel Filter
 To change the image you want to apply the sobel filter to, you must insert the .jpeg image into the Matlab_image_to_hex folder, rename it to color_image.jpeg, and run the Matlab_image_to_hex/image_to_hex.m file on Matlab.  Doing this will create a file named gray_image.txt in the sobel_core/input_image.  NOTE: inorder for the image to properly display on the Icebreaker board, the image must be rescaled to have a width: 160 and height: 120: this is the default. Then you can do the steps in the Programming The Icebreaker Board section.
+![Input_Image](https://github.com/helghast098/Sobel-Filter-FPGA/assets/96333105/056f811d-4b74-45a4-b7f2-fe0590b7cf93)
+
 
 ## Displaying The Converted Image On Matlab
 After converting an image to it's hex values in Matlab, you can generated a file named image_out.txt, which is the hex values of the image with the sobel filter applied, in sobel_core/image_out.  To do this, you must be in the sobel_core folder and run the command `make test_verilator` which will run testbench.sv. In the testbench, there are image height and image width parameters that must match the height and width used in Matlab_image_to_hex/image_to_hex.m. After the simulation is done, you must open Matlab and run Matlab_image_to_hex/hex_to_image.m.  This will display a visual representation of the image_out.txt file.  NOTE: You must use the same width and height as the original image.
+                    ![Converted_Image](https://github.com/helghast098/Sobel-Filter-FPGA/assets/96333105/3c6bc635-8ecb-4288-a234-adda58be7349)
+
 
 ## Hardware Required
 iCEBreaker FPGA: [link to buy](https://1bitsquared.com/products/icebreaker)
